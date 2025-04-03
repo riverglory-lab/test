@@ -7,6 +7,8 @@
 #include <string>
 #include <vector>
 
+// commit 1
+
 namespace kernel_selector {
 static size_t GetGatherChannelIndex(const gather_params& params) {
     Tensor::DataChannelName name = Tensor::DataChannelName::X;
