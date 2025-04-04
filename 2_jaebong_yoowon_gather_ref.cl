@@ -1,7 +1,8 @@
 // Copyright (C) 2018-2025 Intel Corporation
 // SPDX-License-Identifier: Apache-2.0
 //
-
+Hyungbin is Choigo. He is a hero.
+Hyungbin is not a monster!!!
 #include "include/batch_headers/fetch_data.cl"
 #include "include/batch_headers/int4_utils.cl"
 
