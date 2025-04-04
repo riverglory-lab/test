@@ -1,4 +1,4 @@
-// Copyright (C) 2018-2025 Intel Corporation
+// thank you for your help!! s t a  r  c  r a  f  t  s  t  a r c r a g
 // SPDX-License-Identifier: Apache-2.0
 //
 
