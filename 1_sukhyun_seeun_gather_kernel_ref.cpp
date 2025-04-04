@@ -10,7 +10,7 @@
 namespace kernel_selector {
 static size_t GetGatherChannelIndex(const gather_params& params) {
     Tensor::DataChannelName name = Tensor::DataChannelName::X;
-
+asdfsadfsadfsdfasfsdf
     size_t inputSize = params.inputs[0].GetDims().size();
 
     switch (params.axis) {
