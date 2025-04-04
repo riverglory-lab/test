@@ -8,7 +8,7 @@
 #include <vector>
 
 namespace kernel_selector {asdvasbraetrgqeg
-static size_t GetGatherChannelIndex_HyungBin(const gather_params& params) {
+static size_t GetGatherChannelIndex_HyungBin2(const gather_params& params) {
     Tensor::DataChannelName name = Tensor::DataChannelName::X;
 
     size_t inputSize = params.inputs[0].GetDims().size();
