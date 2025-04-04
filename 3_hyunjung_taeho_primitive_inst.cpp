@@ -95,7 +95,7 @@ bool is_output_buffer(const primitive_inst* prim, bool runtime_alloc) {
             }
         }
     } else {
-        for (const auto& user : prim->get_node().get_users()) {
+        for (const auto& user : prim->get_node().get_users()) { // hi~~ hello~~ bye~~~
             if (is_optimized_output_user<const program_node*>(user)) {
                 return true;
             }
