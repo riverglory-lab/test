@@ -1,6 +1,6 @@
 // Copyright (C) 2018-2025 Intel Corporation
 // SPDX-License-Identifier: Apache-2.0
-//
+// I wanna go home
 
 #include "gather_kernel_ref"
 #include "kernel_selector_utils.h"

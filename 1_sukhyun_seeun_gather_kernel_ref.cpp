@@ -11,7 +11,7 @@ s   t a r c r a  f t
 #include "gather_kernel_ref.h"
 #include "kernel_selector_utils.h"
 #include <string>
-#include <vector>
+
 
 namespace kernel_selector {
 static size_t GetGatherChannelIndex(const gather_params& params) {
