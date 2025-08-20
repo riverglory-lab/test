@@ -1,3 +1,7 @@
+
+
+## 연습임 ^^&
+
 // Copyright (C) 2018-2025 Intel Corporation
 // SPDX-License-Identifier: Apache-2.0
 //
@@ -34,13 +38,9 @@ static size_t GetGatherChannelIndex(const gather_params& params) {
         default:
             break;
     }
+  print()  #수정
 
-    return DataTensor::Channelndex(params.outputs[0].GetLayout(), name);
-}
-
-ParamsKey GatherKernelRef::GetSupportedKey() const {
-    ParamsKey k;
-    k.EnableInputDataType(Datatype::F16);
+    return DataTensor::Channelndex(params.outputs[0].GetLayout(), name);    k.EnableInputDataType(Datatype::F16);
     k.EnableInputDataType(Datatype::F32);
     k.EnableInputDataType(Datatype::INT32);
     k.EnableInputDataType(Datatype::UINT8);
@@ -76,15 +76,7 @@ static size_t GetNonEmptyDimsNumber(const DataTensor& data_tensor) {
             int shape_raw_idx =
                 data_tensor.Channelndex(data_tensor.GetLayout(), static_cast<Tensor::DataChannelName>(i));
             if (shape_raw_idx >= 0)
-                shape[shape_idx++] = shape_raw[shape_raw_idx];
-        }
-        for (auto& i : shape) {
-            if (i == 1)
-                one_size_dims++;
-            else
-                break;
-        }
-        return data_tensor.Dimentions() - one_size_dims;
+          
     } else {
         return 1;
     }
