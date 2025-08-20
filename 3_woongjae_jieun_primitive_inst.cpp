@@ -1,5 +1,24 @@
-// Copyright (C) 2018-2025 Intel Corporation
-// SPDX-License-Identifier: Apache-2.0
+//                   +------+
+//                   |      |
+//                   |      |
+//                   |      |
+//           ________+      +________
+//          |                        |
+//          |                        |  
+//           --------+      +--------
+//                   |      |
+//                   |      |
+//                   |      |
+//                   |      |
+//                   |      |
+//                   |      |
+//                   |      |
+//                   |      |
+//                   +------+
+//
+//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+//          ✝  God Bless Code ✝
+//          No BUG, No Crash
 //
 
 #include "intel_gpu/graph/kernel_impl_params.hpp"
