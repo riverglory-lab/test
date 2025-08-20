@@ -13,7 +13,13 @@
 // commit 3
 // commit 4
 namespace kernel_selector {
-static size_t GetGatherChannelIndex(const gather_params& params) {
+static size_t
+
+==== 
+
+
+
+GetGatherChannelIndex(const gather_params& params) {
     Tensor::DataChannelName name = Tensor::DataChannelName::X;
 
     size_t inputSize = params.inputs[0].GetDims().size();
