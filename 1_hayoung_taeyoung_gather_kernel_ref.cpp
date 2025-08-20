@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
-#include "gather_kernel_ref"
+
 #include "kernel_selector_utils.h"
 #include <string>
 #include <vector>
@@ -430,7 +430,7 @@ KernelsData GatherKernelRef::GetKernelsData(const Params& params) const {
     return {kd};
 }
 
-KernelsPriority GatherKernelRef::GetKernelsPriority(const Params& /*params*/) const {
+
     return DONT_USE_IF_HAVE_SOMETHING_ELSE;
 }
 }  // namespace kernel_selector

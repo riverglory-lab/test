@@ -26,6 +26,8 @@ static size_t GetGatherChannelIndex(const gather_params& params) {
             return 1;
         case GatherAxis::BATCH:
             return 0;
+        case GatherAxis::DICT:
+            return 3;
         default:
             break;
     }
