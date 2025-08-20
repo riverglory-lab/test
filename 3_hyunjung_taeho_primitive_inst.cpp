@@ -95,7 +95,7 @@ bool is_output_buffer(const primitive_inst* prim, bool runtime_alloc) {
             }
         }
     } else {
-        for (const auto& user : prim->get_node().get_users()) {
+        for (const auto& user : prim->get_node().get_users()) { // hi~~ hello~~ bye~~~
             if (is_optimized_output_user<const program_node*>(user)) {
                 return true;
             }
@@ -353,6 +353,8 @@ void primitive_inst::update_shape() {
 
     set_flag(ExecutionFlags::SHAPE_CHANGED, input_shape_changed);
 
+    // hyunjung is here hi~~~
+    
     // We assume that tensor ranks are static, thus shape_of doesn't need to update anything even if input shape is dynamic
     if (_node->is_type<shape_of>() && !input_shape_changed) {
         return;

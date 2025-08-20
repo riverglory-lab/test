@@ -215,6 +215,7 @@ void primitive_inst::check_memory_to_set(const memory& mem, const layout& l) con
         const auto& layout_ps = l.get_partial_shape();
         single_value_layout = (layout_ps.size() == 1 && layout_ps[0] == 1);
     }
+    // dfsf
 
     const auto& mem_layout = mem.get_layout();
     OPENVINO_ASSERT((mem_layout == l)
@@ -2917,4 +2918,7 @@ bool ImplementationsFactory::has(impl_types impl_type) const {
     });
 }
 
-}  // namespace cldnn
+}  // namespace cldnnv dfdfdfdfdfdfdfdfd
+
+
+#sdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdmddo

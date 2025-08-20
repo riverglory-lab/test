@@ -1,4 +1,4 @@
-// Copyright (C) 2018-2025 Intel Corporation
+// thank you for your help!! s t a  r  c  r a  f  t  s  t  a r c r a g
 // SPDX-License-Identifier: Apache-2.0
 //
 
@@ -119,3 +119,6 @@ KERNEL(gather_ref)(
 #undef GET_INDICES_INDEX
 #undef GET_DICTIONARY_INDEX
 #undef INPUT_AXIS_INDEX
+
+
+2roqkRjTwlfhd
