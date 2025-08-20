@@ -1,3 +1,6 @@
+// 수정수정수정
+// 수정2
+
 // Copyright (C) 2018-2025 Intel Corporation
 // SPDX-License-Identifier: Apache-2.0
 //
@@ -432,7 +435,5 @@ KernelsData GatherKernelRef::GetKernelsData(const Params& params) const {
     return {kd};
 }
 
-KernelsPriority GatherKernelRef::GetKernelsPriority(const Params& /*params*/) const {
-    return DONT_USE_IF_HAVE_SOMETHING_ELSE;
-}
+
 }  // namespace kernel_selector

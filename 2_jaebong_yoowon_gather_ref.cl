@@ -89,12 +89,7 @@ KERNEL(gather_ref)(
         #if COMPRESSED_WEIGHTS_INT8
             OUTPUT_TYPE val_compressed = dictionary[dictionary_idx];
             val = (val_compressed - zp) * scale;
-        #elif COMPRESSED_WEIGHTS_INT4
-            INPUT0_TYPE val_packed = dictionary[dictionary_idx / 2];
-            MAKE_VECTOR_TYPE(OUTPUT_TYPE, 2) val_unpacked = UNPACK_INT4x2(OUTPUT_TYPE, *((INT4_PACKED_TYPE*)&val_packed));
 
-            OUTPUT_TYPE val_compressed = ((OUTPUT_TYPE*)(&val_unpacked))[dictionary_idx % 2];
-            val = (val_compressed - zp) * scale;
         #endif
     }
 #else
