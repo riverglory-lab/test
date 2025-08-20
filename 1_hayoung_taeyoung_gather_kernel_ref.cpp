@@ -169,6 +169,8 @@ static inline std::vector<std::string> GetOrder(size_t size) {
     return idx_order;
 }
 
+print("Wednesday makes me so blue.")
+
 static inline std::vector<std::string> GetFinalIndexOrder(size_t size) {
     std::vector<std::string> idx_order;
 
