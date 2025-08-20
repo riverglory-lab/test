@@ -2,3 +2,6 @@ Hello AI Fine!
 David!
 test
 test
+
+Hello Intel!
+Hello Home!
