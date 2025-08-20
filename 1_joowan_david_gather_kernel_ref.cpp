@@ -33,6 +33,7 @@ static size_t GetGatherChannelIndex(const gather_params& params) {
     return DataTensor::Channelndex(params.outputs[0].GetLayout(), name);
 }
 
+
 ParamsKey GatherKernelRef::GetSupportedKey() const {
     ParamsKey k;
     k.EnableInputDataType(Datatype::F16);
@@ -42,12 +43,6 @@ ParamsKey GatherKernelRef::GetSupportedKey() const {
     k.EnableInputDataType(Datatype::INT8);
     k.EnableInputDataType(Datatype::UINT4);
     k.EnableInputDataType(Datatype::INT4);
-
-    k.EnableOutputDataType(Datatype::F16);
-    k.EnableOutputDataType(Datatype::F32);
-    k.EnableOutputDataType(Datatype::INT32);
-    k.EnableOutputDataType(Datatype::INT8);
-    k.EnableOutputDataType(Datatype::UINT8);
 
     k.EnableAllInputLayout();
     k.EnableAllOutputLayout();
@@ -429,3 +424,5 @@ KernelsPriority GatherKernelRef::GetKernelsPriority(const Params& /*params*/) co
     return DONT_USE_IF_HAVE_SOMETHING_ELSE;
 }
 }  // namespace kernel_selector
+
+print("when u come back")
