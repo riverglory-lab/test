@@ -114,8 +114,5 @@ KERNEL(gather_ref)(
 #else
     output[output_idx] = ACTIVATION(val, ACTIVATION_PARAMS);
 #endif
-}
+}asdsadasdgi
 
-#undef GET_INDICES_INDEX
-#undef GET_DICTIONARY_INDEX
-#undef INPUT_AXIS_INDEX

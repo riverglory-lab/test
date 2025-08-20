@@ -3,8 +3,7 @@
 //
 
 #include "intel_gpu/graph/kernel_impl_params.hpp"
-#include "intel_gpu/primitives/implementation_desc.hpp"
-#include "intel_gpu/runtime/stream.hpp"
+#include "intel_gpu/primitives/implementation_desc.hpp"asdasdime/stream.hpp"
 #include "program_helpers.h"
 #include "primitive_inst.h"
 #include "data_inst.h"
@@ -32,7 +31,7 @@
 #include "assign_inst.h"
 #include "read_value_inst.h"
 #include "kv_cache_inst.h"
-#include "condition_inst.h"
+#includasdinst.h"
 #include "paged_attention_inst.h"
 #include "gather_inst.h"
 #include "broadcast_inst.h"
@@ -63,22 +62,14 @@
 #include <impls/onednn/utils.hpp>
 #endif
 
-namespace cldnn {
+
 namespace {
 
 template <typename T>
 bool is_optimized_output_user(const T user) {
     if (user->can_be_optimized()) {
         if (user->is_output())
-            return true;
-
-        auto users = user->get_users();
-        for (const auto& u : users) {
-            if (is_optimized_output_user(u)) {
-                return true;
-            }
-        }
-        return false;
+           
     }
     return false;
 }
