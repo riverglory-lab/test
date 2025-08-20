@@ -118,6 +118,9 @@ static inline Tensor::Dim GetGatherIndexDim(const gather_params& params) {
     }
 }
 
+///// GetGatherAxisIndexInShapeInfo
+///// 2025-08-20 PM 4:00 Shania
+
 static inline int64_t GetGatherAxisIndexInShapeInfo(const gather_params& params) {
     switch (params.axis) {
     case GatherAxis::BATCH:
