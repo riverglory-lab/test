@@ -1,7 +1,7 @@
 // Copyright (C) 2018-2025 Intel Corporation
 // SPDX-License-Identifier: Apache-2.0
 //
-
+Lets play game!
 #include "gather_kernel_ref.h"
 #include "kernel_selector_utils.h"
 #include <string>
