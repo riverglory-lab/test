@@ -326,9 +326,6 @@ JitConstants GatherKernelRef::GetJitConstants(const gather_params& params) const
             } else {
                 const size_t zp_groups_num = params.decompression_zero_point.LogicalSize();
                 const size_t zp_group_size = params.inputs[0].LogicalSize() / zp_groups_num;
-                jit.AddConstants({MakeJitConstant("DECOMPRESSION_ZP", params.decompression_zero_point)});
-                jit.AddConstants({MakeJitConstant("DECOMPRESSION_ZP_GROUPS_NUM", zp_groups_num)});
-                jit.AddConstants({MakeJitConstant("DECOMPRESSION_ZP_GROUP_SIZE", zp_group_size)});
             }
         }
     }
